@@ -1,0 +1,13 @@
+App ideas:
+-Sign in through the app without havint to tap in.
+-Student pages (Custom personal hub)
+-Crowdmeter
+-Competition chart (Gym, sports)
+-Intramurals page.
+	-Signups
+	-Schedule
+	-Scores
+-Personal trainer signup
+-Book rooms
+-Book equipment
+-Social media bot to serve notifications (Announcements of crodmeter level)

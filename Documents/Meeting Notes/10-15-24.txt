@@ -1,0 +1,18 @@
+
+-Git:
+You must learn how to use git. There will be a document posted with a guide in the github, which will tell you how to contribute to the project. It will also provide some resouces on where to learn git. 
+
+Git is ESSENTIAL to this project. 
+
+-Figma: 
+This week the task is to start working on figma mock ups. If you have ideas on how the UI should look, start making figma mockups and sharing them in the urec chat. We will be going over them next meeting. 
+
+-Language:
+We will be using Dart with the Flutter framework for this project. Resources to learn this will be put in the resources channel. Dart is a general purpose programming language that supports multi platform development.
+
+Notes for things that are in the works:
+-I (Berkeley) am communicating with Derek to contact the school to see if we can use the current urec system to access data. 
+-I am in the process of determining what styling we will be using for the code (ie camelCase, commenting practice, etc...). 
+-I will be making a google doc which we will be writing documentation in when we start coding. THIS IS NOT OPTIONAL! If you are writing functionality you MUST write documentation that describes what that functionality is doing. 
+
+-Coding will likely begin next week. If you want to be assigned a task you must speak up in the discord server. 

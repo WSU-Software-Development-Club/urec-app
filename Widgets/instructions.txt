@@ -1,0 +1,2 @@
+-All widgets must STRICTLY adhere to the wsu brand guidelines: https://brand.wsu.edu/
+-Each unique widget should be in its own code file

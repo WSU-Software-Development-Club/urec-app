@@ -1,0 +1,24 @@
+Next week we will be starting on UI for:
+-Intramurals sign up page
+-Login page
+-Profile page
+-Menu
+-Home Page
+
+This week:
+-Start working on reusable widgets that adhere to wsu styling rules
+	-https://brand.wsu.edu/ 
+-If you want to be assigned a task let Berkeley know in the server. 
+-Meeting attendees will get top priority for task choices
+
+
+Meeting attendees: 
+-Chi
+-Adrian
+-Gavin
+-Seth
+-Quinn
+-Korbin
+-Vedant
+
+Flutter resources under #resources.

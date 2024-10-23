@@ -1,6 +1,9 @@
 # UREC App  
 This is the WSU Software Development Club's repository for the UREC app for Washington State University (WSU).
-We will be developing a new UREC application for android and IOS devices, that will allow users to view a crodwmeter, checkout rec resources, sign in to the rec, create rec accounts, sign up for intramurals, and more. To see a mockup of the UI we intend to develop you can view our figma mock up [Urec App Project](https://www.figma.com/design/ux8ZvFovBlKAQgLsna8uKH/Urec-App-Project?node-id=0-1&node-type=canvas&t=RbBrbN4ZJmEOOSn6-0). We will be adhering to the [WSU brand guidelines](https://brand.wsu.edu/) for all UI elements.
+We will be developing a new UREC application for android and IOS devices, that will allow users to view a crowdmeter, checkout rec resources, sign in to the rec, create rec accounts, sign up for intramurals, and more. To see a mockup of the UI we intend to develop you can view our figma mock up [Urec App Project](https://www.figma.com/design/ux8ZvFovBlKAQgLsna8uKH/Urec-App-Project?node-id=0-1&node-type=canvas&t=RbBrbN4ZJmEOOSn6-0). We will be adhering to the [WSU brand guidelines](https://brand.wsu.edu/) for all UI elements.
+
+## Contributors
+All contributors to the project will be listed here.
 
 ## How to Contribute
 

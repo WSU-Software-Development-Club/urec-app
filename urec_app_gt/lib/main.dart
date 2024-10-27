@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:urec_app_gt/urec_themes/urec_themes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
+      theme: UrecThemes().themeData,
         // This is the theme of your application.
         //
         // TRY THIS: Try running your application with "flutter run". You'll see
@@ -28,14 +29,6 @@ class MyApp extends StatelessWidget {
         //
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color.fromRGBO(166, 15, 45, 1),
-          primary: const Color.fromRGBO(166, 15, 45, 1),
-          secondary: const Color.fromRGBO(77, 77, 77, 1),
-          tertiary: const Color.fromRGBO(255, 255, 255, 1)
-          ),
-        useMaterial3: true,
-      ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
@@ -56,10 +49,10 @@ class MyHomePage extends StatefulWidget {
   final String title;
 
   @override
-  State<MyHomePage> createState() => _SwitchExampleState();
+  State<MyHomePage> createState() => _MyHomePageState();
 }
 
-class _SwitchExampleState extends State<MyHomePage> { //widget that is called from home page and returns a build result, should return a build result on state change as well
+class _MyHomePageState extends State<MyHomePage> { //widget that is called from home page and returns a build result, should return a build result on state change as well
 
   final bool light = true; // create bool var _on to track switch state, I believe "_" before a var name declares as private
 
@@ -75,7 +68,7 @@ class _SwitchExampleState extends State<MyHomePage> { //widget that is called fr
         // TRY THIS: Try changing the color here to a specific color (to
         // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
         // change color while the other colors stay the same.
-        backgroundColor: Theme.of(context).colorScheme.onPrimary,
+        backgroundColor: Theme.of(context).colorScheme.secondary,
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),

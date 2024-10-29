@@ -22,7 +22,7 @@ class UrecThemes {
   //error color -> if you see this annoying color something is broke >:(
   static const Color errHighlighter = Color.fromRGBO(255, 247, 0, 1); // -> ugly highlighter color, keep an eye out!
 
-
+  //note that this is one theme, but if we need more (like for light/dark mode) a list object would have to made to hold diff versions of the themes. Ez todo
   ThemeData themeData = ThemeData(
     useMaterial3: true,
     colorScheme: const ColorScheme(

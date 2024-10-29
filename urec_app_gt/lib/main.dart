@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:urec_app_gt/urec_themes/urec_themes.dart';
+import 'package:urec_app_gt/common_widgets/urec_switch.dart';
 
 void main() {
   runApp(const MyApp());
@@ -101,7 +102,7 @@ class _MyHomePageState extends State<MyHomePage> { //widget that is called from 
 }
 
 
-class UrecSwitch extends StatefulWidget {
+/* class UrecSwitch extends StatefulWidget {
   const UrecSwitch({super.key,});
 
   @override
@@ -127,4 +128,4 @@ class _UrecSwitchState extends State<UrecSwitch> {
     );
   }
 
-}
+} */

@@ -1,0 +1,13 @@
+-Korbin Weiler
+-Cem Beyenal
+-Gavin Travis
+-Seth Agilar
+-Berkeley Conkling
+
+-Continue working on re-usable widgets 
+-Finish everything on kanban board
+-If everything is completed ill put up more UI tasks
+-If you want a task @ me (Berkeley) in the server 
+	-Give me github username
+	-Then you will make a branch off of features/widget, or I can make you one
+	-You will be assigned a task on kanban board

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:urec_app_gt/common_widgets/urec_card.dart';
 import 'package:urec_app_gt/urec_themes/urec_themes.dart';
 import 'package:urec_app_gt/common_widgets/urec_switch.dart';
 
@@ -75,7 +76,7 @@ class _MyHomePageState extends State<MyHomePage> { //widget that is called from 
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: const Center(
+      body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
         child: Column(
@@ -94,7 +95,48 @@ class _MyHomePageState extends State<MyHomePage> { //widget that is called from 
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            UrecSwitch(),
+            const UrecSwitch(),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16.0), // Set horizontal padding here
+              child: SizedBox(
+                height: 200, // Set a fixed height for the ListView
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: [
+                    UrecCard(
+                      title: "Weightlifting",
+                      showIcon: true,
+                      width: 200,
+                      overlayColor: Colors.red,
+                      onTap: () {
+                        print("Weightlifting tapped");
+                      },
+                    ),
+                    const SizedBox(width: 10), // Space between cards
+                    UrecCard(
+                      title: "Yoga",
+                      imageUrl: "assets/images/weightlifting_placeholder_image.jpg",
+                      showIcon: true,
+                      width: 200,
+                      onTap: () {
+                        print("Yoga tapped");
+                      },
+                    ),
+                    const SizedBox(width: 10),
+                    UrecCard(
+                      title: "Running",
+                      imageUrl: "assets/images/weightlifting_placeholder_image.jpg",
+                      showIcon: true,
+                      width: 200,
+                      onTap: () {
+                        print("Running tapped");
+                      },
+                    ),
+                    // Add more UrecCards as needed
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),

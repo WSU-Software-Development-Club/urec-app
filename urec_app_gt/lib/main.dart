@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:urec_app_gt/urec_themes/urec_themes.dart';
 import 'package:urec_app_gt/common_widgets/urec_switch.dart';
+import 'package:urec_app_gt/common_widgets/urec_textfield.dart';
 
 void main() {
   runApp(const MyApp());
@@ -94,6 +95,9 @@ class _MyHomePageState extends State<MyHomePage> { //widget that is called from 
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             UrecSwitch(),
+            UrecText(),
+            UrecText(labelText: 'Do you need help? Text here', hintText: 'Enter Text',),
+            
           ],
         ),
       ),

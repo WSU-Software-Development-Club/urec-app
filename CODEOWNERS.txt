@@ -1,3 +1,4 @@
 @WSU-Software-Development-Club
 @BerkeleyConkling
 @GrTravis2
+@lsc-compsci

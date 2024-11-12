@@ -96,7 +96,7 @@ class _MyHomePageState extends State<MyHomePage> { //widget that is called from 
           children: <Widget>[
             UrecSwitch(),
             UrecButton(
-              text: 'Button',
+              text: 'Test Button',
               onPressed: () {
                 print('Button pressed');
               },

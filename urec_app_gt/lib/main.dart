@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:urec_app_gt/urec_themes/urec_themes.dart';
 import 'package:urec_app_gt/common_widgets/urec_switch.dart';
+import 'package:urec_app_gt/common_widgets/urec_button.dart';
 
 void main() {
   runApp(const MyApp());
@@ -74,7 +75,7 @@ class _MyHomePageState extends State<MyHomePage> { //widget that is called from 
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: const Center(
+      body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
         child: Column(
@@ -94,12 +95,19 @@ class _MyHomePageState extends State<MyHomePage> { //widget that is called from 
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             UrecSwitch(),
+            UrecButton(
+              text: 'Button',
+              onPressed: () {
+                print('Button pressed');
+              },
+            ),
           ],
         ),
       ),
     );
   }
 }
+
 
 
 /* class UrecSwitch extends StatefulWidget {

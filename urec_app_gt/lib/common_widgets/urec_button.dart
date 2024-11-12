@@ -1,28 +1,25 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class UrecButton extends StatefulWidget {
+class UrecButton extends StatelessWidget {
+  final String text;
+  final VoidCallback onPressed;
+  final Color? color;
 
-  const UrecButton({Key? key}) : super(key: key);
-
-  @override
-  State<UrecButton> createState() => _UrecButtonState();
-}
-
-class _UrecButtonState extends State<UrecButton>{
-  bool light = true;
+  const UrecButton({
+    Key? key,
+    required this.text,
+    required this.onPressed,
+    this.color,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-
     return ElevatedButton(
-      child: Text('Button'),
-      onPressed: () {
-        setState(() {
-          print('Pressed Button');
-        });
-      },
+      style: ElevatedButton.styleFrom(
+        backgroundColor: color ?? Theme.of(context).primaryColor,
+      ),
+      child: Text(text),
+      onPressed: onPressed,
     );
   }
 }

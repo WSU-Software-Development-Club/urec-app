@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:urec_app_gt/urec_themes/urec_themes.dart';
 import 'package:urec_app_gt/common_widgets/urec_switch.dart';
 import 'package:urec_app_gt/common_widgets/urec_button.dart';
+import 'package:urec_app_gt/common_widgets/urec_textfield.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,6 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: UrecThemes().themeData,
         // This is the theme of your application.
@@ -101,6 +103,8 @@ class _MyHomePageState extends State<MyHomePage> { //widget that is called from 
                 print('Button pressed');
               },
             ),
+            UrecText(),
+            UrecText(labelText: 'Do you need help? Text here', hintText: 'Enter Text',),
           ],
         ),
       ),

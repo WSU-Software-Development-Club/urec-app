@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:urec_app_gt/common_widgets/cards/urec_image_card.dart';
+import 'package:urec_app_gt/common_widgets/cards/urec_matches_card.dart';
 import 'package:urec_app_gt/urec_themes/urec_themes.dart';
 import 'package:urec_app_gt/common_widgets/urec_switch.dart';
 
@@ -16,21 +18,21 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: UrecThemes().themeData,
-        // This is the theme of your application.
-        //
-        // TRY THIS: Try running your application with "flutter run". You'll see
-        // the application has a purple toolbar. Then, without quitting the app,
-        // try changing the seedColor in the colorScheme below to Colors.green
-        // and then invoke "hot reload" (save your changes or press the "hot
-        // reload" button in a Flutter-supported IDE, or press "r" if you used
-        // the command line to start the app).
-        //
-        // Notice that the counter didn't reset back to zero; the application
-        // state is not lost during the reload. To reset the state, use hot
-        // restart instead.
-        //
-        // This works for code too, not just values: Most code changes can be
-        // tested with just a hot reload.
+      // This is the theme of your application.
+      //
+      // TRY THIS: Try running your application with "flutter run". You'll see
+      // the application has a purple toolbar. Then, without quitting the app,
+      // try changing the seedColor in the colorScheme below to Colors.green
+      // and then invoke "hot reload" (save your changes or press the "hot
+      // reload" button in a Flutter-supported IDE, or press "r" if you used
+      // the command line to start the app).
+      //
+      // Notice that the counter didn't reset back to zero; the application
+      // state is not lost during the reload. To reset the state, use hot
+      // restart instead.
+      //
+      // This works for code too, not just values: Most code changes can be
+      // tested with just a hot reload.
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
@@ -54,9 +56,11 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> { //widget that is called from home page and returns a build result, should return a build result on state change as well
+class _MyHomePageState extends State<MyHomePage> {
+  //widget that is called from home page and returns a build result, should return a build result on state change as well
 
-  final bool light = true; // create bool var _on to track switch state, I believe "_" before a var name declares as private
+  final bool light =
+      true; // create bool var _on to track switch state, I believe "_" before a var name declares as private
 
   @override
   Widget build(BuildContext context) {
@@ -75,7 +79,7 @@ class _MyHomePageState extends State<MyHomePage> { //widget that is called from 
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: const Center(
+      body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
         child: Column(
@@ -94,7 +98,24 @@ class _MyHomePageState extends State<MyHomePage> { //widget that is called from 
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            UrecSwitch(),
+            const UrecSwitch(),
+            UrecImageCard(
+              title: "My Title",
+              imageUrl: "assets/images/weightlifting_placeholder_image.jpg",
+              onTap: () {
+                print("Card tapped!");
+              },
+              width: 300,
+            ),
+            const UrecMatchesCard(
+              title: "Upcoming Match",
+              date: "Nov 20, 2024",
+              score: "0 - 0",
+              team1LogoUrl: "assets/images/weightlifting_placeholder_image.jpg",
+              team2LogoUrl: "assets/images/weightlifting_placeholder_image.jpg",
+              team1Name: "WSU",
+              team2Name: "Huskies",
+            ),
           ],
         ),
       ),

@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:urec_app_gt/common_widgets/cards/urec_image_card.dart';
-import 'package:urec_app_gt/common_widgets/cards/urec_matches_card.dart';
 import 'package:urec_app_gt/urec_themes/urec_themes.dart';
 import 'package:urec_app_gt/common_widgets/urec_switch.dart';
 
@@ -79,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: Center(
+      body: const Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
         child: Column(
@@ -98,56 +96,10 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const UrecSwitch(),
-            UrecImageCard(
-              title: "My Title",
-              imageUrl: "assets/images/weightlifting_placeholder_image.jpg",
-              onTap: () {
-                print("Card tapped!");
-              },
-              width: 300,
-            ),
-            const UrecMatchesCard(
-              title: "Upcoming Match",
-              date: "Nov 20, 2024",
-              score: "0 - 0",
-              team1LogoUrl: "assets/images/weightlifting_placeholder_image.jpg",
-              team2LogoUrl: "assets/images/weightlifting_placeholder_image.jpg",
-              team1Name: "WSU",
-              team2Name: "Huskies",
-            ),
+            UrecSwitch(),
           ],
         ),
       ),
     );
   }
 }
-
-
-/* class UrecSwitch extends StatefulWidget {
-  const UrecSwitch({super.key,});
-
-  @override
-  State<UrecSwitch> createState() => _UrecSwitchState();
-}
-
-class _UrecSwitchState extends State<UrecSwitch> {
-  bool light = true;
-
-  @override
-  Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    
-    return Switch(
-      value: light,
-      activeColor: theme.primaryColor,
-      onChanged: (bool value) {
-        setState(() {
-          light = value;
-        }
-        );
-      }
-    );
-  }
-
-} */

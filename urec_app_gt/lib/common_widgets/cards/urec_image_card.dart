@@ -8,12 +8,12 @@ class UrecImageCard extends UrecBaseCard {
 
   const UrecImageCard({
     super.key,
-    required this.title,
-    required double width,
-    this.imageUrl,
-    this.showIcon = false,
-    VoidCallback? onTap,
-  }) : super(width: width);
+    required this.title,  // Title of the card
+    required double super.width,  // Width of the card
+    this.imageUrl,  // The card's image
+    this.showIcon = false,  // The arrow icon in the top right of the card
+    super.onTap,  // Navigational component of the card
+  });
 
   @override
   Widget buildChild(BuildContext context) {
@@ -29,7 +29,7 @@ class UrecImageCard extends UrecBaseCard {
               borderRadius: BorderRadius.circular(12),
               child: Image.asset(
                 imageUrl!,
-                fit: BoxFit.cover,
+                fit: BoxFit.fill,
                 errorBuilder: (context, error, stackTrace) {
                   return Container(
                     color: Colors.grey,
@@ -43,12 +43,16 @@ class UrecImageCard extends UrecBaseCard {
             bottom: 12,
             left: 12,
             right: 12,
-            child: Text(
-              title,
-              style: const TextStyle(
-                color: Colors.white,
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
+            child: Align(
+              alignment:
+                  Alignment.bottomCenter,
+              child: Text(
+                title,
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
           ),

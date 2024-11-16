@@ -24,6 +24,7 @@ class UrecMatchesCard extends UrecBaseCard {
     super.backgroundColor = const Color.fromRGBO(166, 15, 45, 1), // The background color of the card
     double width = 400, // Width of the card
     double height = 200,  // Height of the card
+    super.onTap, // Navigational component of the match card
   }) : super(height: height, width: width);
 
   @override

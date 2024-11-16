@@ -4,6 +4,7 @@ import 'package:urec_app_gt/common_widgets/urec_switch.dart';
 import 'package:urec_app_gt/common_widgets/urec_button.dart';
 import 'package:urec_app_gt/common_widgets/urec_textfield.dart';
 import 'package:urec_app_gt/common_widgets/urec_iconbutton.dart';
+import 'package:urec_app_gt/common_widgets/urec_menubar.dart';
 
 
 void main() {
@@ -118,6 +119,15 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             
             UrecIconButton(iconColor: UrecThemes.cougarCrimson, highlightColor: Colors.red,iconSize: 50, splashRadius: 10, tooltip: "Testing",),
+
+            UrecMenuBar(
+              buttons: [
+                UrecIconButton(iconColor: UrecThemes.cougarCrimson, highlightColor: Colors.red,iconSize: 50, splashRadius: 10,),
+                UrecIconButton(iconColor: UrecThemes.cougarCrimson, highlightColor: Colors.red,iconSize: 50, splashRadius: 10,),
+                UrecIconButton(iconColor: UrecThemes.cougarCrimson, highlightColor: Colors.red,iconSize: 50, splashRadius: 10,),
+              ],
+              direction: Axis.vertical,
+            ),
 
           ],
         ),

@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: UrecThemes().themeData,
       // This is the theme of your application.
@@ -117,12 +118,14 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             
             UrecIconButton(iconColor: UrecThemes.cougarCrimson, highlightColor: Colors.red,iconSize: 50, splashRadius: 10, tooltip: "Testing",),
+
           ],
         ),
       ),
     );
   }
 }
+
 
 
 /* class UrecSwitch extends StatefulWidget {

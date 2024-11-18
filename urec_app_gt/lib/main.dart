@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:urec_app_gt/urec_themes/urec_themes.dart';
 import 'package:urec_app_gt/common_widgets/urec_switch.dart';
+import 'package:urec_app_gt/common_widgets/urec_button.dart';
+import 'package:urec_app_gt/common_widgets/urec_textfield.dart';
+import 'package:urec_app_gt/common_widgets/urec_iconbutton.dart';
+import 'package:urec_app_gt/common_widgets/urec_menubar.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +18,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: UrecThemes().themeData,
       // This is the theme of your application.
@@ -77,7 +81,7 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: const Center(
+      body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
         child: Column(
@@ -97,9 +101,35 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             UrecSwitch(),
+            
+            UrecButton(
+              text: 'test button',
+              onPressed: () {
+                print('Button pressed');
+              },
+              color: Colors.blue,
+              textColor: Colors.white,
+            ),
+            
+            UrecText(),
+            UrecText(
+              labelText: 'Do you need help? Text here',
+              hintText: 'Enter Text',
+            ),
+            
+            UrecIconButton(iconColor: UrecThemes.cougarCrimson, highlightColor: Colors.red,iconSize: 50, splashRadius: 10, tooltip: "Testing",),
+
+            UrecMenuBar(
+              buttons: [
+                UrecIconButton(iconColor: UrecThemes.cougarCrimson, highlightColor: Colors.red,iconSize: 50, splashRadius: 10,),
+                UrecIconButton(iconColor: UrecThemes.cougarCrimson, highlightColor: Colors.red,iconSize: 50, splashRadius: 10,),
+                UrecIconButton(iconColor: UrecThemes.cougarCrimson, highlightColor: Colors.red,iconSize: 50, splashRadius: 10,),
+              ],
+              direction: Axis.vertical,
+            ),
+
           ],
         ),
       ),
     );
   }
-}

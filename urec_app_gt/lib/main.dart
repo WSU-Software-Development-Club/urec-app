@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:urec_app_gt/urec_screens/profile_page.dart';
 import 'package:urec_app_gt/urec_themes/urec_themes.dart';
 import 'package:urec_app_gt/common_widgets/urec_switch.dart';
 import 'package:urec_app_gt/common_widgets/urec_button.dart';
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: UrecThemes().themeData,
       // This is the theme of your application.
       //
@@ -35,7 +37,8 @@ class MyApp extends StatelessWidget {
       //
       // This works for code too, not just values: Most code changes can be
       // tested with just a hot reload.
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      //home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const ProfilePage(),
     );
   }
 }
@@ -111,8 +114,8 @@ class _MyHomePageState extends State<MyHomePage> {
               textColor: Colors.white,
             ),
             
-            UrecText(),
-            UrecText(
+            const UrecText(),
+            const UrecText(
               labelText: 'Do you need help? Text here',
               hintText: 'Enter Text',
             ),

@@ -29,7 +29,7 @@ class ProfilePage extends StatelessWidget {
               children: [
                 // User profile photo
                 CircleAvatar(
-                  backgroundImage: AssetImage('assets/butch.png'), // Replace with the correct image path
+                  backgroundImage: AssetImage('assets/images/butch.jpg'), // Replace with the correct image path
                   radius: 40,
                 ),
                 SizedBox(width: 16),
